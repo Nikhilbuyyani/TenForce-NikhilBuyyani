@@ -26,5 +26,7 @@ namespace Test_Taste_Console_Application.Domain.DataTransferObjects
         //The path to the nested property is created by using a dot. 
         [JsonProperty("mass.massValue")] public float MassValue { get; set; }
         [JsonProperty("mass.massExponent")] public float MassExponent { get; set; }
+        //The property gravity is used to retrieve the gravity value for the moons
+        [JsonProperty("gravity")] public float Gravity { get; set; }
     }
 }

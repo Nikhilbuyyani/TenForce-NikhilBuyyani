@@ -146,7 +146,9 @@ namespace Test_Taste_Console_Application.Domain.Services
         public void OutputAllPlanetsAndTheirAverageMoonGravityToConsole()
         {
             //The function works the same way as the PrintAllPlanetsAndTheirMoonsToConsole function. You can find more comments there.
+            Console.WriteLine("Loading planets data");
             var planets = _planetService.GetAllPlanets().ToArray();
+            Console.WriteLine("Completed loading planets data");
             if (!planets.Any())
             {
                 Console.WriteLine(OutputString.NoMoonsFound);
